@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.android.demo.notepad3.PlayService.LocalBinder"
+        x="970" y="437">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.android.demo.notepad3.PlayService" x="892" y="504">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.android.demo.notepad3.NotesDbAdapter.DatabaseHelper"
+        x="127" y="487">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.android.demo.notepad3.TypingText" x="177" y="652">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.android.demo.notepad3.NotesDbAdapter" x="83" y="296">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.android.demo.notepad3.NotesDbAdapter.DatabaseHelper"
+            endpointName="mDbHelper" kind="Simple"/>
+        <Communication destinationClassName="com.android.demo.notepad3.NotesDbAdapter.DatabaseHelper"/>
+    </Class>
+    <Class name="com.android.demo.notepad3.NoteDisplay" x="708" y="33">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.android.demo.notepad3.NoteFragment.OnFragmentSwitchListener"/>
+    </Class>
+    <Class
+        name="com.android.demo.notepad3.NoteFragment.OnFragmentSwitchListener"
+        x="900" y="173">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.android.demo.notepad3.Notepadv3" x="68" y="35">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.android.demo.notepad3.NotesDbAdapter"
+            endpointName="mDbHelper" kind="Simple"/>
+        <Communication destinationClassName="com.android.demo.notepad3.NotesDbAdapter"/>
+    </Class>
+    <Class name="com.android.demo.notepad3.NoteEdit" x="516" y="582">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.android.demo.notepad3.NotesDbAdapter"
+            endpointName="mDbHelper" kind="Simple"/>
+        <Communication destinationClassName="com.android.demo.notepad3.NotesDbAdapter"/>
+    </Class>
+    <Class name="com.android.demo.notepad3.NoteFragment" x="520" y="128">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.android.demo.notepad3.NoteFragment.OnFragmentSwitchListener"
+            endpointName="mCallback" kind="Simple"/>
+        <Association
+            destinationClassName="com.android.demo.notepad3.PlayService"
+            endpointName="mBoundService" kind="Simple"/>
+        <Association
+            destinationClassName="com.android.demo.notepad3.TypingText"
+            endpointName="mBodyText" kind="Simple"/>
+        <Association
+            destinationClassName="com.android.demo.notepad3.NotesDbAdapter"
+            endpointName="mDbHelper" kind="Simple"/>
+        <Communication destinationClassName="com.android.demo.notepad3.PlayService.LocalBinder"/>
+        <Communication destinationClassName="com.android.demo.notepad3.PlayService"/>
+        <Communication destinationClassName="com.android.demo.notepad3.TypingText"/>
+        <Communication destinationClassName="com.android.demo.notepad3.NotesDbAdapter"/>
+        <Communication destinationClassName="com.android.demo.notepad3.NoteFragment.OnFragmentSwitchListener"/>
+    </Class>
+    <Class
+        name="com.android.demo.notepad3.NoteFragment.MyPhoneStateListener"
+        x="887" y="339">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

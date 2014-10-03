@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="song_array">
+        <item>none</item>
+        <item>Song1</item>
+        <item>Song2</item>
+        <item>Song3</item>
+    </string-array>
+
+    <string-array name="bg_array">
+        <item>black</item>
+        <item>Background1</item>
+        <item>Background2</item>
+        <item>Background3</item>
+    </string-array>
+</resources>
